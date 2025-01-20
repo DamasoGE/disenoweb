@@ -1,0 +1,7 @@
+// Usamos @fordward en archivos que solo reexpportan 
+// módulos (útil para organizar código) mientras que 
+// usamos @use en archivos que necesitan importar 
+// módulos para usarlos.
+@forward 'normalize';
+@forward 'variables';
+@forward 'globales';
