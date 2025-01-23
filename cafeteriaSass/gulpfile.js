@@ -14,8 +14,17 @@ function css(done) {
    .pipe(dest('build/css')) // este es el archivo que debe compilar
    done();
 }
+
+function imagenes() {
+  return src("src/img/**/*") 
+  .pipe(dest("build/img"));
+ }
+
 function dev(){
  watch('src/scss/**/*.scss',css) // atento a cambios del archivo app.scss y si cambia vuelve a llamar a la función css
+ watch("src/img/**/*", imagenes);
 }
 
-exports.default = series(css,dev)
+exports.css = css;
+exports.imagenes = imagenes;
+exports.default = series(imagenes, css, dev);

@@ -1,5 +1,8 @@
 @use 'header/header';
-@use 'base';
+@use 'base'; //Cargaría el archivo index que se encuentre en la carpeta base
+@use 'header';
+
+// los archivos con _ hacen que sean invisibles para la transpilación puesto que lo cogemos desde el app
 
 $color: blue;
 $color2: green;
