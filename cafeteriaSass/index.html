@@ -17,13 +17,18 @@
 
   </head>
   <body>
-    <header class="header-inicio">
+    <header class="header header-inicio">
       <div class="contenido-header contenedor">
+
         <div class="barra">
-          <div class="logo"></div>
+
+          <div class="logo">
+            <img src="./build/img/logo.svg" alt="logo cafetería">
+          </div>
+
           <nav class="nav-principal">
             <!-- a*6 y luego para los saltos de línea option en MAC-->
-            <a href="https://educacionadistancia.juntadeandalucia.es/centros/granada/pluginfile.php/606121/mod_resource/content/2/index.html">Inicio</a>
+            <a class="activo" href="index.html">Inicio</a>
             <a href="https://educacionadistancia.juntadeandalucia.es/centros/granada/pluginfile.php/606121/mod_resource/content/2/nosotros.html">Nosotros</a>
             <a href="https://educacionadistancia.juntadeandalucia.es/centros/granada/pluginfile.php/606121/mod_resource/content/2/proceso.html">Proceso</a>
             <a href="https://educacionadistancia.juntadeandalucia.es/centros/granada/pluginfile.php/606121/mod_resource/content/2/menu.html">Menú</a>
@@ -36,5 +41,184 @@
         </div>
       </div>
     </header>
+
+    <main class="contenedor contenido-principal text-center"> <!-- contenido-principal para poder seleccionarlo con CSS -->
+      
+      <section class="conoce">
+        <h2><span>Conoce mas</span>sobre nosotros</h2> <!-- span para poner diferentes tamaños -->
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit, quisquam
+          quidem libero blanditiis facilis corporis harum, labore dignissimos
+          delectus vero aut deleniti quo eius laborum! Ipsam facilis neque modi.
+          Facere. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+          fuga provident culpa quibusdam officiis, dolores optio animi corporis
+          sint facere hic porro iusto explicabo, maiores qui velit! Distinctio,
+          incidunt iste.
+        </p>
+      </section>
+
+      <section class="iconos">
+        <ul class="listado-iconos">
+            <li>
+                <img src="build/img/icono_cafe.svg" alt="icono cafe">
+                <p>Café</p>
+            </li>
+            <li>
+                <img src="build/img/icono_postre.svg" alt="icono postre">
+                <p>Postres</p>
+            </li>
+            <li>
+                <img src="build/img/icono_te.svg" alt="icono te">
+                <p>Té</p>
+            </li>
+        </ul>
+    </section>
+
+      <section class="experiencia">
+        <h2><span>Vive la</span>experiencia</h2>
+        <div class="galeria">
+          <div class="imagen">
+              <img src="build/img/galeria/galeria_01.jpg" alt="galeria">
+          </div>
+          <div class="imagen">
+              <img src="build/img/galeria/galeria_02.jpg" alt="galeria">
+          </div>
+          <div class="imagen">
+              <img src="build/img/galeria/galeria_03.jpg" alt="galeria">
+          </div>
+          <div class="imagen">
+              <img src="build/img/galeria/galeria_04.jpg" alt="galeria">
+          </div>
+          <div class="imagen">
+              <img src="build/img/galeria/galeria_05.jpg" alt="galeria">
+          </div>
+          <div class="imagen">
+              <img src="build/img/galeria/galeria_06.jpg" alt="galeria">
+          </div>
+          <div class="imagen">
+              <img src="build/img/galeria/galeria_07.jpg" alt="galeria">
+          </div>
+          <div class="imagen">
+              <img src="build/img/galeria/galeria_08.jpg" alt="galeria">
+          </div>
+          <div class="imagen">
+              <img src="build/img/galeria/galeria_09.jpg" alt="galeria">
+          </div>
+          <div class="imagen">
+              <img src="build/img/galeria/galeria_10.jpg" alt="galeria">
+          </div>
+      </div>
+  </section>
+
+  <section class="nuestro-menu">
+    <h2 class="heading-blanco"><span>Nuestro delicioso</span>Menú</h2>
+    <div class="contenedor grid-menu">
+        <section class="menu cafe">
+            <h3>Café</h3>
+            <ul>
+                <li>
+                    <p>Café Latte <span>Café Espresso con leche caliente evaporada</span> </p>
+                    <p class="precio">$25</p>
+                </li>
+                <li>
+                    <p>Café Mocha <span>Espresso con crema batida</span> </p>
+                    <p class="precio">$30</p>
+                </li>
+                <li>
+                    <p>Café Americano <span>Café Negro</span> </p>
+                    <p class="precio">$30</p>
+                </li>
+                <li>
+                    <p>Capuccino<span>Espresso con una capa suave de espuma</span> </p>
+                    <p class="precio">$25</p>
+                </li>
+                <li>
+                    <p>Café Mocha Frio<span>Espresso, dulce con mocha y leche.</span> </p>
+                    <p class="precio">$29</p>
+                </li>
+                <li>
+                    <p>Mocha Frio Quemado<span>Espresso, hielo, con azucar quemada y mantequilla.</span> </p>
+                    <p class="precio">$35</p>
+                </li>
+                <li>
+                    <p>Latte con Caramelo<span>Espresso, leche y caramelo.</span> </p>
+                    <p class="precio">$39</p>
+                </li>
+            </ul>
+          </section>
+          <section class="menu comida">
+            <h3>Comida</h3>
+            <ul>
+                <li>
+                    <p>Baguette de Pollo <span>Delicioso Baguette con pollo a la plancha</span> </p>
+                    <p class="precio">$45</p>
+                </li>
+                <li>
+                    <p>Baguette Pollo y Queso <span>Baguette combinado con Pollo y Queso Manchego</span> </p>
+                    <p class="precio">$50</p>
+                </li>
+                <li>
+                    <p>Baguette con Tocino<span>Baguette con especias y verduras, además de tocino</span> </p>
+                    <p class="precio">$50</p>
+                </li>
+                <li>
+                    <p>Baguette de Jamón<span>Delicioso Baguette con Jamón y Especias</span> </p>
+                    <p class="precio">$65</p>
+                </li>
+                <li>
+                    <p>Baguette con Jamón, Queso y Tocino<span>El especial de la casa</span> </p>
+                    <p class="precio">$69</p>
+                </li>
+                <li>
+                    <p>Sandwich de Pollo<span>Delicioso sandwich con Pollo y especies</span> </p>
+                    <p class="precio">$65</p>
+                </li>
+                <li>
+                    <p>Sandwich de Jamón y queso<span>Queso Amarillo con Jamón y Queso</span> </p>
+                    <p class="precio">$59</p>
+                </li>
+            </ul>
+          </section>
+
+          
+    </div>
+  </section>
+
+<section class="nuestros-testimoniales contenedor bg-white margin-negativo-10">
+    <h2><span>Lo que dicen nuestros</span>Clientes</h2>
+    <div class="testimonial">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+        libero blanditiis facilis corporis harum, labore dignissimos delectus
+        vero aut deleniti quo eius laborum! Ipsam facilis neque modi. Facere.
+      </p>
+     <p class="autor">Julio A. González</p>
+    </div>
+</section>
+
+ </main>
+
+ <footer class="footer">
+  <div class="contenedor contenido-footer bg-white">
+    <div class="footer-box ubicacion">
+      <h3>Ubicación</h3>
+      <p>Pedro Antonio de Alarcon, 24</p>
+      <p>Granada</p>
+    </div>
+    <div class="footer-box reservas">
+      <h3>Reservas</h3>
+      <p>Tel. +34 687 944 567 </p>
+      <p></p>
+    </div>
+    <div class="footer-box horario">
+      <h3>Horario</h3>
+      <p>Lun-Jue: 11:00 - 22:00</p>
+      <p>Vie-Sab: 09:00 - 24:00</p>
+      <p>Domingo: Cerrado</p>
+    </div>
+  </div> 
+  <p class="copyright">Todos los derechos reservados. La Cafetería</p>
+</footer>
+    
  </body>
 </html>

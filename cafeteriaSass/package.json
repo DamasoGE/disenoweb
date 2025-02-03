@@ -9,9 +9,12 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "gulp": "^5.0.0",
+    "gulp": "^4.0.2",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^6.0.0",
+    "gulp-webp": "^4.0.1",
     "sass": "^1.83.4",
     "vite": "^6.0.5"
   }
