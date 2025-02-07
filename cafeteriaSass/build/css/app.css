@@ -352,6 +352,12 @@ ul {
   margin: 0;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 h1, h2, .heading-blanco, h3 {
   font-family: "Raleway", sans-serif;
   margin: 0 0 5rem 0;
@@ -448,22 +454,6 @@ h3 {
 
 .header-nosotros {
   background-image: url(../../../build/img/header_nosotros.jpg);
-}
-
-.header-proceso {
-  background-image: url(../../../build/img/header_proceso.jpg);
-}
-
-.header-menu {
-  background-image: url(../../../build/img/header_menu.jpg);
-}
-
-.header-galeria {
-  background-image: url(../../../build/img/header_galeria.jpg);
-}
-
-.header-contacto {
-  background-image: url(../../../build/img/header_contacto.jpg);
 }
 
 .nav-principal {
@@ -781,4 +771,31 @@ h3 {
 .footer-box p {
   font-size: 2rem;
   margin: 0;
+}
+
+@media (min-width: 768px) {
+  .contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+.contenido-nosotros .imagen {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .contenido-nosotros .imagen {
+    margin: 0 2rem 0 0;
+  }
+}
+.contenido-nosotros .imagen img {
+  transform: rotate(-6deg);
+  border: 3rem solid #fff;
+  box-shadow: 9px 10px 5px -7px rgba(0, 0, 0, 0.35);
+}
+.contenido-nosotros .texto blockquote {
+  margin: 0;
+  padding: 1rem;
+  border-left: 0.5rem solid #5e311e;
+  font-size: 2rem;
 }

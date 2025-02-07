@@ -39,3 +39,9 @@ ul{
     padding:0; //quitar la franja verde a la izquierda
     margin: 0; //quitar el espacio arriba y abajo
 }
+
+img {
+    max-width: 100%;
+    height: auto; // para el que el altura se defina de acuerdo al ancho que tenga la imagen.
+    display: block; // para que tome todo el espacio disponible y no quede espacio en blanco debajo de la imagen.
+   }
