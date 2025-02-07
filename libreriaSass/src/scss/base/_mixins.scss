@@ -1,17 +1,20 @@
 @use 'variables' as v;
 //creamos un mixin para cada una de las mediaqueries, el content, será reemplazado por lo que pongamos al hacer el @include del mixin.
+
 @mixin telefono {
-   @media (min-width: v.$telefono) {
+   @media (max-width: v.$telefono) {
        @content;
    }
 }
+
 @mixin tablet {
-   @media (min-width: v.$tablet) {
+   @media (max-width: v.$tablet) {
        @content;
    }
 }
+
 @mixin desktop {
-   @media (min-width: v.$desktop) {
+   @media (max-width: v.$desktop) {
        @content;
    }
 }

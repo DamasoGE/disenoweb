@@ -1,0 +1,8 @@
+@use './base/variables' as v;
+
+*{
+    box-sizing: border-box;
+    font-family: v.$fuente_principal;
+    margin: 0px;
+    padding: 0px;
+  }

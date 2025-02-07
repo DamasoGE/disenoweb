@@ -1,0 +1,85 @@
+@use '../base/variables' as v;
+
+.main-index{
+    grid-area: main;
+    background-image: url(../img/bg_main.webp);
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-index section{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border: 5px solid v.$negro;
+    transform: skew(-5deg);
+    background-color: v.$blanco;
+    width: 80%;
+    height: 150px;
+    overflow: hidden;
+}
+
+.main-index section img{
+    margin: 10px;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid v.$negro;
+}
+.main-index section:nth-child(odd) img{
+    order: 1;
+}
+
+.main-index section:nth-child(odd) div{
+    order: 2;
+}
+
+.main-index section div{
+ width: 100%;
+ transform: skew(5deg);
+}
+
+.main-index section div p{
+    text-align: left;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-family: v.$fuente_secundaria;
+}
+
+.main-index section div h3{
+    margin: 5px;
+}
+
+
+.main-index section img{
+    width: 30%;
+}
+
+@media screen and (max-width: 780px) {
+
+    .main-index section{
+        width: 95%;
+
+    }
+
+    .main-index section div h3{
+        margin: 5px;
+        font-size: 1rem;
+    }
+
+    .main-index section div p{
+        font-size: 1rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .main-index section div p{
+        font-size: 0.75rem;
+    }
+    
+}

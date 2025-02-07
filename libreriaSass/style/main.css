@@ -1,0 +1,83 @@
+main{
+    grid-area: main;
+    background-image: url(../img/bg_main.jpg);
+    background-size: cover;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+main section{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border: 5px solid black;
+    transform: skew(-5deg);
+    background-color: white;
+    width: 80%;
+    height: 150px;
+    overflow: hidden;
+}
+
+main section img{
+    margin: 10px;
+    object-fit: cover;
+    object-position: top;
+    border: 2px solid black;
+}
+main section:nth-child(odd) img{
+    order: 1;
+}
+
+main section:nth-child(odd) div{
+    order: 2;
+}
+
+main section div{
+ width: 100%;
+ transform: skew(5deg);
+}
+
+main section div p{
+    text-align: left;
+    margin: 10px;
+    font-size: 1.2rem;
+    font-family: "Sanchez", serif;
+}
+
+main section div h3{
+    margin: 5px;
+}
+
+
+main section img{
+    width: 30%;
+}
+
+@media screen and (max-width: 780px) {
+
+    main section{
+        width: 95%;
+
+    }
+
+    main section div h3{
+        margin: 5px;
+        font-size: 1rem;
+    }
+
+    main section div p{
+        font-size: 1rem;
+    }
+    
+
+}
+
+@media screen and (max-width: 480px) {
+
+    main section div p{
+        font-size: 0.75rem;
+    }
+    
+}
