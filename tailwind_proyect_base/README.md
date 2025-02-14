@@ -1,0 +1,3 @@
+## COMANDOS PARA LEVANTAR EL PROYECTO
+
+- npm init -y
