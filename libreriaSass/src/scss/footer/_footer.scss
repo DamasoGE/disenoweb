@@ -1,0 +1,38 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+footer{
+    grid-area: footer;
+    background-color: v.$sec_azul;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: v.$blanco;
+    padding: 20px;
+
+    @include m.telefono {
+        font-size: 0.75rem;
+    }
+}
+  
+footer div:last-child a{
+font-size: 2rem;
+padding: 5px;
+    @include m.telefono {
+        font-size: 1.5rem;
+    }
+}
+
+footer a{
+text-decoration: none;
+color: v.$prim_amarillo;
+}
+
+footer a:hover{
+text-shadow: 2px 2px 3px v.$negro;
+}
+
+ul{
+list-style: none;
+padding: 0px;
+}

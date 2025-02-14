@@ -1,0 +1,101 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+header{
+    grid-area: header;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/bg_header.webp);
+    background-size: cover;
+
+    @include m.tablet {
+      flex-wrap: nowrap;
+    }
+}
+  
+header img{
+  width: 200px;
+  @include m.tablet {
+    width: 150px;
+  }
+}
+
+header p{
+  width: 100%;
+  font-size: 3rem;
+  font-weight: bold; 
+  color: v.$prim_amarillo; 
+  letter-spacing: 2px; 
+  text-shadow: 0px 0px 5px v.$prim_azul; 
+  @include m.tablet {
+    font-size: 2.5rem;
+  }
+}
+
+header *{
+  margin: 10px;
+}
+
+nav{
+  grid-area: nav;
+  background-color: v.$sec_marron;
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  border-top: 2px solid v.$blanco;
+  border-bottom: 2px solid v.$blanco;
+  @include m.tablet {
+    flex-wrap: wrap;
+  }
+}
+
+nav form{
+  @include m.tablet {
+    padding: 10px;
+    order: 2;
+    width: 100%;
+  }
+}
+
+nav input{
+  border-radius: 5px;
+  text-align: center;
+  height: 30px;
+}
+
+nav form button{
+  background-color: v.$sec_azul;
+  font-weight: bold;
+  height: 30px;
+  color: v.$prim_amarillo; 
+}
+
+nav a{
+  text-decoration: none;
+  color: v.$blanco;
+}
+
+nav ul{
+  display: flex;
+  transform: skewX(-15deg);
+  border-right: 3px solid v.$blanco;
+}
+
+nav ul li{
+  padding: 20px;
+
+  border-left: 3px solid v.$blanco;
+  @include m.tablet {
+    border-bottom: 2px solid white;
+  }
+}
+
+nav ul li p{
+  transform: skewX(15deg); 
+}
+
+nav ul li:hover{
+  box-shadow: 0px 0px 10px v.$blanco;
+}
